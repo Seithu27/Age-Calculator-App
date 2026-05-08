@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#152238">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p class="subtitle">Find out your exact age in seconds</p>
+
+        <div class="input-section">
+            <label>ENTER YOUR DATE OF BIRTH</label>
+            <input type="date" id="dob">
+            <button onclick="calculateAge()">CALCULATE AGE</button>
+        </div>
+
+        <div class="result-card">
+            <p>YOUR AGE</p>
+            <h2 id="years-main">-- Years</h2>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3 id="months-sub">--</h3>
+                <p>MONTHS</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="weeks-sub">--</h3>
+                <p>WEEKS</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="days-sub">--</h3>
+                <p>DAYS</p>
+            </div>
+            <div class="stat-box">
+                <h3 id="hours-sub">--</h3>
+                <p>HOURS</p>
+            </div>
+        </div>
+
+        <button class="reset-btn" onclick="resetAll()">Reset</button>
+        
+        <div class="footer">
+            Made with ❤️ by Kaung Creation
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
